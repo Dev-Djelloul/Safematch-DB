@@ -1,0 +1,313 @@
+<svg width="1300" height="1040" viewBox="0 0 1300 1040" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono', 'Courier New', monospace">
+<defs>
+  <marker id="arr-blue" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#60a5fa"/></marker>
+  <marker id="arr-orange" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#f97316"/></marker>
+  <marker id="arr-yellow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#fbbf24"/></marker>
+  <marker id="arr-cyan" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#22d3ee"/></marker>
+  <marker id="arr-purple" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#c084fc"/></marker>
+  <marker id="arr-slate" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#818cf8"/></marker>
+  <marker id="arr-lime" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#4ade80"/></marker>
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#0c1120" stroke-width="0.8"/>
+  </pattern>
+  <linearGradient id="g-fl" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0d2140"/><stop offset="100%" stop-color="#081428"/></linearGradient>
+  <linearGradient id="g-au" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1e0e04"/><stop offset="100%" stop-color="#110804"/></linearGradient>
+  <linearGradient id="g-fs" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#161206"/><stop offset="100%" stop-color="#0e0c04"/></linearGradient>
+  <linearGradient id="g-st" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#180e04"/><stop offset="100%" stop-color="#0e0804"/></linearGradient>
+  <linearGradient id="g-fc" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#061a0e"/><stop offset="100%" stop-color="#031008"/></linearGradient>
+  <linearGradient id="g-sp" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#061a10"/><stop offset="100%" stop-color="#031008"/></linearGradient>
+  <linearGradient id="g-db" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#071820"/><stop offset="100%" stop-color="#041018"/></linearGradient>
+  <linearGradient id="g-ai" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#130820"/><stop offset="100%" stop-color="#0a0514"/></linearGradient>
+  <linearGradient id="g-sr" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1a1404"/><stop offset="100%" stop-color="#0e0c02"/></linearGradient>
+  <linearGradient id="g-in" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0e0c22"/><stop offset="100%" stop-color="#080618"/></linearGradient>
+</defs>
+
+<!-- BG -->
+<rect width="1300" height="1040" fill="#05070d"/>
+<rect width="1300" height="1040" fill="url(#grid)"/>
+
+<!-- layer dividers -->
+<line x1="30" y1="232" x2="1275" y2="232" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+<line x1="30" y1="530" x2="1275" y2="530" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+<line x1="30" y1="848" x2="1275" y2="848" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+
+<!-- layer labels -->
+<text x="14" y="165" font-size="8.5" font-weight="700" fill="rgba(96,165,250,0.35)" letter-spacing="2" transform="rotate(-90,14,165)">CLIENT</text>
+<text x="14" y="402" font-size="8.5" font-weight="700" fill="rgba(249,115,22,0.35)" letter-spacing="2" transform="rotate(-90,14,402)">FIREBASE</text>
+<text x="14" y="702" font-size="8.5" font-weight="700" fill="rgba(52,211,153,0.35)" letter-spacing="2" transform="rotate(-90,14,702)">BACKEND</text>
+<text x="14" y="960" font-size="8.5" font-weight="700" fill="rgba(129,140,248,0.35)" letter-spacing="2" transform="rotate(-90,14,960)">INFRA</text>
+
+<!-- title -->
+<text x="650" y="34" text-anchor="middle" font-size="21" font-weight="900" fill="#ffffff" letter-spacing="-1"><tspan fill="#ffffff">Safe</tspan><tspan fill="#34d399">match</tspan></text>
+<text x="650" y="50" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.2)" letter-spacing="3">SYSTEM ARCHITECTURE</text>
+
+<!-- ── FLUTTER ── -->
+<rect x="350" y="65" width="580" height="154" rx="10" fill="url(#g-fl)" stroke="#60a5fa" stroke-width="1.8"/>
+<rect x="350" y="65" width="580" height="30" rx="10" fill="rgba(96,165,250,0.12)"/>
+<rect x="350" y="85" width="580" height="10" fill="rgba(96,165,250,0.12)"/>
+<text x="640" y="87" text-anchor="middle" font-size="13.5" font-weight="700" fill="#93c5fd">Flutter Mobile App</text>
+<line x1="350" y1="95" x2="930" y2="95" stroke="rgba(96,165,250,0.15)" stroke-width="1"/>
+<text x="390" y="114" font-size="9" fill="rgba(96,165,250,0.65)">&#x2192; UI · navigation · state (Riverpod) · GoRouter</text>
+<text x="390" y="131" font-size="9" fill="rgba(96,165,250,0.65)">&#x2192; Login via Firebase Auth  ·  Upload to Firebase Storage</text>
+<text x="390" y="148" font-size="9" fill="rgba(96,165,250,0.65)">&#x2192; Chat &amp; presence via Firestore  ·  REST API &#x2192; Backend (+ Firebase ID token)</text>
+<text x="390" y="165" font-size="9" fill="rgba(96,165,250,0.65)">&#x2192; Stripe SDK · Apple Pay · Google Pay · FCM push notifications</text>
+<text x="390" y="182" font-size="8.5" fill="rgba(96,165,250,0.38)">Sends Firebase ID token on every backend request</text>
+<circle cx="916" cy="78" r="4" fill="#60a5fa" opacity="0.8"/>
+
+<!-- ── Firebase Auth ── -->
+<rect x="36" y="250" width="256" height="192" rx="8" fill="url(#g-au)" stroke="#f97316" stroke-width="1.4"/>
+<rect x="36" y="250" width="256" height="28" rx="8" fill="rgba(249,115,22,0.12)"/>
+<rect x="36" y="268" width="256" height="10" fill="rgba(249,115,22,0.12)"/>
+<text x="164" y="270" text-anchor="middle" font-size="12.5" font-weight="700" fill="#f97316">Firebase Auth</text>
+<line x1="36" y1="278" x2="292" y2="278" stroke="rgba(249,115,22,0.15)" stroke-width="1"/>
+<text x="52" y="297" font-size="9" fill="rgba(249,115,22,0.7)">&#x2192; Issues ID tokens after login</text>
+<text x="52" y="314" font-size="9" fill="rgba(249,115,22,0.7)">&#x2192; OTP · Google · Apple</text>
+<text x="52" y="331" font-size="9" fill="rgba(249,115,22,0.7)">&#x2192; Backend verifies every token</text>
+<text x="52" y="348" font-size="9" fill="rgba(249,115,22,0.7)">&#x2192; Firebase Admin SDK</text>
+<line x1="52" y1="360" x2="276" y2="360" stroke="rgba(249,115,22,0.1)" stroke-width="1"/>
+<text x="52" y="376" font-size="8.5" fill="rgba(249,115,22,0.38)">MVP: OTP + Argon2</text>
+<text x="52" y="392" font-size="8.5" fill="rgba(249,115,22,0.38)">Future: doc + selfie verification</text>
+<text x="52" y="430" font-size="8" fill="rgba(249,115,22,0.22)">FirebaseAuthPort (hexagonal)</text>
+<circle cx="280" cy="262" r="3.5" fill="#f97316" opacity="0.8"/>
+
+<!-- ── Firestore ── -->
+<rect x="308" y="250" width="256" height="192" rx="8" fill="url(#g-fs)" stroke="#fbbf24" stroke-width="1.4"/>
+<rect x="308" y="250" width="256" height="28" rx="8" fill="rgba(251,191,36,0.1)"/>
+<rect x="308" y="268" width="256" height="10" fill="rgba(251,191,36,0.1)"/>
+<text x="436" y="270" text-anchor="middle" font-size="12.5" font-weight="700" fill="#fbbf24">Firestore (NoSQL)</text>
+<line x1="308" y1="278" x2="564" y2="278" stroke="rgba(251,191,36,0.12)" stroke-width="1"/>
+<text x="324" y="297" font-size="9" fill="rgba(251,191,36,0.7)">&#x2192; Chat messages (real-time)</text>
+<text x="324" y="314" font-size="9" fill="rgba(251,191,36,0.7)">&#x2192; Presence / typing indicators</text>
+<text x="324" y="331" font-size="9" fill="rgba(251,191,36,0.7)">&#x2192; Lightweight real-time signals</text>
+<text x="324" y="348" font-size="9" fill="rgba(251,191,36,0.7)">&#x2192; Flutter + backend access</text>
+<line x1="324" y1="360" x2="548" y2="360" stroke="rgba(251,191,36,0.1)" stroke-width="1"/>
+<text x="324" y="376" font-size="8.5" fill="rgba(251,191,36,0.38)">Complements PostgreSQL</text>
+<text x="324" y="392" font-size="8.5" fill="rgba(251,191,36,0.38)">not a replacement</text>
+<text x="324" y="430" font-size="8" fill="rgba(251,191,36,0.22)">FirestorePort (hexagonal)</text>
+<circle cx="552" cy="262" r="3.5" fill="#fbbf24" opacity="0.8"/>
+
+<!-- ── Firebase Storage ── -->
+<rect x="580" y="250" width="256" height="192" rx="8" fill="url(#g-st)" stroke="#fb923c" stroke-width="1.4"/>
+<rect x="580" y="250" width="256" height="28" rx="8" fill="rgba(251,146,60,0.1)"/>
+<rect x="580" y="268" width="256" height="10" fill="rgba(251,146,60,0.1)"/>
+<text x="708" y="270" text-anchor="middle" font-size="12.5" font-weight="700" fill="#fb923c">Firebase Storage</text>
+<line x1="580" y1="278" x2="836" y2="278" stroke="rgba(251,146,60,0.12)" stroke-width="1"/>
+<text x="596" y="297" font-size="9" fill="rgba(251,146,60,0.7)">&#x2192; User profile images</text>
+<text x="596" y="314" font-size="9" fill="rgba(251,146,60,0.7)">&#x2192; Flutter uploads directly</text>
+<text x="596" y="331" font-size="9" fill="rgba(251,146,60,0.7)">&#x2192; CDN + Firebase rules</text>
+<text x="596" y="348" font-size="9" fill="rgba(251,146,60,0.7)">&#x2192; Backend stores URLs only</text>
+<line x1="596" y1="360" x2="820" y2="360" stroke="rgba(251,146,60,0.1)" stroke-width="1"/>
+<text x="596" y="376" font-size="8.5" fill="rgba(251,146,60,0.38)">No backend relay needed</text>
+<text x="596" y="392" font-size="8.5" fill="rgba(251,146,60,0.38)">Optional: signed URLs</text>
+<circle cx="824" cy="262" r="3.5" fill="#fb923c" opacity="0.8"/>
+
+<!-- ── FCM ── -->
+<rect x="852" y="250" width="256" height="192" rx="8" fill="url(#g-fc)" stroke="#4ade80" stroke-width="1.4"/>
+<rect x="852" y="250" width="256" height="28" rx="8" fill="rgba(74,222,128,0.1)"/>
+<rect x="852" y="268" width="256" height="10" fill="rgba(74,222,128,0.1)"/>
+<text x="980" y="270" text-anchor="middle" font-size="12.5" font-weight="700" fill="#4ade80">Firebase FCM</text>
+<line x1="852" y1="278" x2="1108" y2="278" stroke="rgba(74,222,128,0.12)" stroke-width="1"/>
+<text x="868" y="297" font-size="9" fill="rgba(74,222,128,0.7)">&#x2192; Push notifications iOS + Android</text>
+<text x="868" y="314" font-size="9" fill="rgba(74,222,128,0.7)">&#x2192; New invitation alert</text>
+<text x="868" y="331" font-size="9" fill="rgba(74,222,128,0.7)">&#x2192; Message · date reminder</text>
+<text x="868" y="348" font-size="9" fill="rgba(74,222,128,0.7)">&#x2192; Check-in prompt</text>
+<line x1="868" y1="360" x2="1092" y2="360" stroke="rgba(74,222,128,0.1)" stroke-width="1"/>
+<text x="868" y="376" font-size="8.5" fill="rgba(74,222,128,0.38)">IDs only — no PII in payload</text>
+<text x="868" y="392" font-size="8.5" fill="rgba(74,222,128,0.38)">Async after domain events</text>
+<circle cx="1096" cy="262" r="3.5" fill="#4ade80" opacity="0.8"/>
+
+<!-- ── Spring Boot ── -->
+<rect x="36" y="548" width="530" height="288" rx="10" fill="url(#g-sp)" stroke="#34d399" stroke-width="2"/>
+<rect x="36" y="548" width="530" height="30" rx="10" fill="rgba(52,211,153,0.1)"/>
+<rect x="36" y="568" width="530" height="10" fill="rgba(52,211,153,0.1)"/>
+<text x="301" y="570" text-anchor="middle" font-size="13.5" font-weight="700" fill="#34d399">Backend — Spring Boot</text>
+<text x="301" y="587" text-anchor="middle" font-size="8.5" fill="rgba(52,211,153,0.4)">Cloud Run  ·  Java 17</text>
+<line x1="36" y1="594" x2="566" y2="594" stroke="rgba(52,211,153,0.12)" stroke-width="1"/>
+<!-- pkg boxes -->
+<rect x="52" y="602" width="116" height="96" rx="5" fill="rgba(52,211,153,0.04)" stroke="rgba(52,211,153,0.18)" stroke-width="1"/>
+<text x="110" y="619" text-anchor="middle" font-size="9.5" font-weight="700" fill="rgba(52,211,153,0.78)">api /</text>
+<text x="64" y="636" font-size="8.5" fill="rgba(52,211,153,0.55)">controller</text>
+<text x="64" y="651" font-size="8.5" fill="rgba(52,211,153,0.55)">dto (req / res)</text>
+<text x="64" y="666" font-size="8.5" fill="rgba(52,211,153,0.55)">mapper</text>
+<text x="64" y="686" font-size="7.5" fill="rgba(52,211,153,0.3)">REST · validation</text>
+<rect x="180" y="602" width="122" height="96" rx="5" fill="rgba(52,211,153,0.04)" stroke="rgba(52,211,153,0.18)" stroke-width="1"/>
+<text x="241" y="619" text-anchor="middle" font-size="9.5" font-weight="700" fill="rgba(52,211,153,0.78)">domain /</text>
+<text x="192" y="636" font-size="8.5" fill="rgba(52,211,153,0.55)">model · service</text>
+<text x="192" y="651" font-size="8.5" fill="rgba(52,211,153,0.55)">event</text>
+<text x="192" y="666" font-size="8.5" fill="rgba(52,211,153,0.55)">port (interfaces)</text>
+<text x="192" y="686" font-size="7.5" fill="rgba(52,211,153,0.3)">hexagonal arch</text>
+<rect x="314" y="602" width="130" height="96" rx="5" fill="rgba(52,211,153,0.04)" stroke="rgba(52,211,153,0.18)" stroke-width="1"/>
+<text x="379" y="619" text-anchor="middle" font-size="9.5" font-weight="700" fill="rgba(52,211,153,0.78)">infrastructure /</text>
+<text x="326" y="636" font-size="8.5" fill="rgba(52,211,153,0.55)">security · jwt</text>
+<text x="326" y="651" font-size="8.5" fill="rgba(52,211,153,0.55)">repository · ai</text>
+<text x="326" y="666" font-size="8.5" fill="rgba(52,211,153,0.55)">payment · storage</text>
+<text x="326" y="686" font-size="7.5" fill="rgba(52,211,153,0.3)">config · firebase</text>
+<rect x="456" y="602" width="108" height="96" rx="5" fill="rgba(52,211,153,0.04)" stroke="rgba(52,211,153,0.18)" stroke-width="1"/>
+<text x="510" y="619" text-anchor="middle" font-size="9.5" font-weight="700" fill="rgba(52,211,153,0.78)">common /</text>
+<text x="468" y="636" font-size="8.5" fill="rgba(52,211,153,0.55)">exception</text>
+<text x="468" y="651" font-size="8.5" fill="rgba(52,211,153,0.55)">global handler</text>
+<text x="468" y="666" font-size="8.5" fill="rgba(52,211,153,0.55)">util (JWT)</text>
+<text x="468" y="686" font-size="7.5" fill="rgba(52,211,153,0.3)">Argon2 · geo</text>
+<!-- responsibilities -->
+<line x1="52" y1="710" x2="550" y2="710" stroke="rgba(52,211,153,0.08)" stroke-width="1"/>
+<text x="52" y="728" font-size="9" fill="rgba(52,211,153,0.6)">&#x2192; Validate Firebase tokens · Matching pipeline (@Scheduled) · Business rules</text>
+<text x="52" y="746" font-size="9" fill="rgba(52,211,153,0.6)">&#x2192; RBAC @PreAuthorize · Rate limiting per IP · Stripe webhook handling</text>
+<text x="52" y="764" font-size="9" fill="rgba(52,211,153,0.6)">&#x2192; Secrets from GCP Secret Manager · All integrations behind ports</text>
+<text x="52" y="782" font-size="9" fill="rgba(52,211,153,0.42)">&#x2192; Zero PII in logs · AuditEvent on all security actions</text>
+<circle cx="554" cy="558" r="3.5" fill="#34d399" opacity="0.8"/>
+
+<!-- ── Cloud SQL ── -->
+<rect x="590" y="548" width="256" height="288" rx="8" fill="url(#g-db)" stroke="#22d3ee" stroke-width="1.5"/>
+<rect x="590" y="548" width="256" height="28" rx="8" fill="rgba(34,211,238,0.08)"/>
+<rect x="590" y="566" width="256" height="10" fill="rgba(34,211,238,0.08)"/>
+<text x="718" y="568" text-anchor="middle" font-size="12.5" font-weight="700" fill="#22d3ee">Cloud SQL</text>
+<text x="718" y="584" text-anchor="middle" font-size="8.5" fill="rgba(34,211,238,0.45)">PostgreSQL</text>
+<line x1="590" y1="592" x2="846" y2="592" stroke="rgba(34,211,238,0.1)" stroke-width="1"/>
+<text x="606" y="611" font-size="9" fill="rgba(34,211,238,0.65)">&#x2192; users · profiles</text>
+<text x="606" y="628" font-size="9" fill="rgba(34,211,238,0.65)">&#x2192; preferences</text>
+<text x="606" y="645" font-size="9" fill="rgba(34,211,238,0.65)">&#x2192; matches · batches</text>
+<text x="606" y="662" font-size="9" fill="rgba(34,211,238,0.65)">&#x2192; conversations</text>
+<text x="606" y="679" font-size="9" fill="rgba(34,211,238,0.65)">&#x2192; payments · subs</text>
+<text x="606" y="696" font-size="9" fill="rgba(34,211,238,0.65)">&#x2192; security events</text>
+<text x="606" y="713" font-size="9" fill="rgba(34,211,238,0.65)">&#x2192; audit logs</text>
+<line x1="606" y1="726" x2="830" y2="726" stroke="rgba(34,211,238,0.08)" stroke-width="1"/>
+<text x="606" y="743" font-size="8.5" fill="rgba(34,211,238,0.38)">Source of truth</text>
+<text x="606" y="759" font-size="8.5" fill="rgba(34,211,238,0.38)">Private VPC — no public IP</text>
+<text x="606" y="775" font-size="8.5" fill="rgba(34,211,238,0.38)">ACID · AES-256 at rest</text>
+<text x="606" y="791" font-size="8.5" fill="rgba(34,211,238,0.38)">VPC connector only</text>
+<circle cx="834" cy="558" r="3.5" fill="#22d3ee" opacity="0.8"/>
+
+<!-- ── AI Provider ── -->
+<rect x="878" y="548" width="218" height="144" rx="8" fill="url(#g-ai)" stroke="#c084fc" stroke-width="1.4"/>
+<rect x="878" y="548" width="218" height="28" rx="8" fill="rgba(192,132,252,0.08)"/>
+<rect x="878" y="566" width="218" height="10" fill="rgba(192,132,252,0.08)"/>
+<text x="987" y="568" text-anchor="middle" font-size="12.5" font-weight="700" fill="#c084fc">AI Provider</text>
+<line x1="878" y1="576" x2="1096" y2="576" stroke="rgba(192,132,252,0.1)" stroke-width="1"/>
+<text x="894" y="595" font-size="9" fill="rgba(192,132,252,0.7)">&#x2192; Compatibility scoring</text>
+<text x="894" y="612" font-size="9" fill="rgba(192,132,252,0.7)">&#x2192; Emotional matching</text>
+<text x="894" y="629" font-size="9" fill="rgba(192,132,252,0.7)">&#x2192; Moderation</text>
+<text x="894" y="646" font-size="9" fill="rgba(192,132,252,0.7)">&#x2192; Recommendations</text>
+<line x1="894" y1="658" x2="1078" y2="658" stroke="rgba(192,132,252,0.08)" stroke-width="1"/>
+<text x="894" y="675" font-size="8.5" fill="rgba(192,132,252,0.38)">AiScoringPort — swappable</text>
+<circle cx="1084" cy="558" r="3.5" fill="#c084fc" opacity="0.8"/>
+
+<!-- ── Stripe ── -->
+<rect x="878" y="708" width="218" height="128" rx="8" fill="url(#g-sr)" stroke="#fbbf24" stroke-width="1.4"/>
+<rect x="878" y="708" width="218" height="28" rx="8" fill="rgba(251,191,36,0.08)"/>
+<rect x="878" y="726" width="218" height="10" fill="rgba(251,191,36,0.08)"/>
+<text x="987" y="728" text-anchor="middle" font-size="12.5" font-weight="700" fill="#fbbf24">Stripe</text>
+<line x1="878" y1="736" x2="1096" y2="736" stroke="rgba(251,191,36,0.1)" stroke-width="1"/>
+<text x="894" y="755" font-size="9" fill="rgba(251,191,36,0.7)">&#x2192; 4th match purchase</text>
+<text x="894" y="772" font-size="9" fill="rgba(251,191,36,0.7)">&#x2192; Subscriptions</text>
+<text x="894" y="789" font-size="9" fill="rgba(251,191,36,0.7)">&#x2192; Signed webhooks</text>
+<line x1="894" y1="801" x2="1078" y2="801" stroke="rgba(251,191,36,0.08)" stroke-width="1"/>
+<text x="894" y="818" font-size="8.5" fill="rgba(251,191,36,0.38)">Zero card data — Stripe IDs only</text>
+<circle cx="1084" cy="718" r="3.5" fill="#fbbf24" opacity="0.8"/>
+
+<!-- ── INFRA ── -->
+<!-- Cloud Run -->
+<rect x="36" y="866" width="268" height="124" rx="7" fill="url(#g-in)" stroke="#818cf8" stroke-width="1.3"/>
+<rect x="36" y="866" width="268" height="24" rx="7" fill="rgba(129,140,248,0.1)"/>
+<rect x="36" y="880" width="268" height="10" fill="rgba(129,140,248,0.1)"/>
+<text x="170" y="882" text-anchor="middle" font-size="11.5" font-weight="700" fill="#818cf8">Cloud Run</text>
+<line x1="36" y1="890" x2="304" y2="890" stroke="rgba(129,140,248,0.1)" stroke-width="1"/>
+<text x="52" y="908" font-size="9" fill="rgba(129,140,248,0.65)">&#x2192; Containerized backend</text>
+<text x="52" y="924" font-size="9" fill="rgba(129,140,248,0.65)">&#x2192; Autoscaling · HTTPS</text>
+<text x="52" y="940" font-size="9" fill="rgba(129,140,248,0.65)">&#x2192; CI/CD GitHub Actions</text>
+<text x="52" y="956" font-size="9" fill="rgba(129,140,248,0.65)">&#x2192; VPC connector &#x2192; SQL</text>
+<text x="52" y="976" font-size="7.5" fill="rgba(129,140,248,0.3)">Scales to zero</text>
+<!-- Secret Manager -->
+<rect x="324" y="866" width="268" height="124" rx="7" fill="url(#g-in)" stroke="#818cf8" stroke-width="1.3"/>
+<rect x="324" y="866" width="268" height="24" rx="7" fill="rgba(129,140,248,0.1)"/>
+<rect x="324" y="880" width="268" height="10" fill="rgba(129,140,248,0.1)"/>
+<text x="458" y="882" text-anchor="middle" font-size="11.5" font-weight="700" fill="#818cf8">Secret Manager</text>
+<line x1="324" y1="890" x2="592" y2="890" stroke="rgba(129,140,248,0.1)" stroke-width="1"/>
+<text x="340" y="908" font-size="9" fill="rgba(129,140,248,0.65)">&#x2192; DB credentials · JWT</text>
+<text x="340" y="924" font-size="9" fill="rgba(129,140,248,0.65)">&#x2192; Stripe secret + webhook</text>
+<text x="340" y="940" font-size="9" fill="rgba(129,140,248,0.65)">&#x2192; Firebase svc account</text>
+<text x="340" y="956" font-size="9" fill="rgba(129,140,248,0.65)">&#x2192; AI API keys</text>
+<text x="340" y="976" font-size="7.5" fill="rgba(129,140,248,0.3)">Runtime only — never in code</text>
+<!-- IAM -->
+<rect x="612" y="866" width="268" height="124" rx="7" fill="url(#g-in)" stroke="#818cf8" stroke-width="1.3"/>
+<rect x="612" y="866" width="268" height="24" rx="7" fill="rgba(129,140,248,0.1)"/>
+<rect x="612" y="880" width="268" height="10" fill="rgba(129,140,248,0.1)"/>
+<text x="746" y="882" text-anchor="middle" font-size="11.5" font-weight="700" fill="#818cf8">IAM</text>
+<line x1="612" y1="890" x2="880" y2="890" stroke="rgba(129,140,248,0.1)" stroke-width="1"/>
+<text x="628" y="908" font-size="9" fill="rgba(129,140,248,0.65)">&#x2192; Service accounts</text>
+<text x="628" y="924" font-size="9" fill="rgba(129,140,248,0.65)">&#x2192; Run &#x2192; SQL · Firestore</text>
+<text x="628" y="940" font-size="9" fill="rgba(129,140,248,0.65)">&#x2192; Run &#x2192; Secret Manager</text>
+<text x="628" y="956" font-size="9" fill="rgba(129,140,248,0.65)">&#x2192; Least privilege</text>
+<text x="628" y="976" font-size="7.5" fill="rgba(129,140,248,0.3)">Per-component accounts</text>
+<!-- VPC -->
+<rect x="900" y="866" width="370" height="124" rx="7" fill="url(#g-in)" stroke="#818cf8" stroke-width="1.3"/>
+<rect x="900" y="866" width="370" height="24" rx="7" fill="rgba(129,140,248,0.1)"/>
+<rect x="900" y="880" width="370" height="10" fill="rgba(129,140,248,0.1)"/>
+<text x="1085" y="882" text-anchor="middle" font-size="11.5" font-weight="700" fill="#818cf8">VPC / Networking</text>
+<line x1="900" y1="890" x2="1270" y2="890" stroke="rgba(129,140,248,0.1)" stroke-width="1"/>
+<text x="916" y="908" font-size="9" fill="rgba(129,140,248,0.65)">&#x2192; Private: Cloud Run &#x2194; Cloud SQL</text>
+<text x="916" y="924" font-size="9" fill="rgba(129,140,248,0.65)">&#x2192; No public IP on database</text>
+<text x="916" y="940" font-size="9" fill="rgba(129,140,248,0.65)">&#x2192; Firewall rules · private IPs</text>
+<text x="916" y="956" font-size="9" fill="rgba(129,140,248,0.65)">&#x2192; HTTPS + TLS 1.2+ everywhere</text>
+
+<!-- ── ARROWS ── -->
+<!-- Flutter → Firebase Auth -->
+<path d="M 520 219 Q 480 240 280 250" fill="none" stroke="#f97316" stroke-width="1.3" stroke-dasharray="5,3" marker-end="url(#arr-orange)" opacity="0.75"/>
+<text x="358" y="238" font-size="8" fill="rgba(249,115,22,0.75)" transform="rotate(-10,358,238)">Login / ID token</text>
+<!-- Flutter → Firestore -->
+<path d="M 600 219 Q 570 240 530 250" fill="none" stroke="#fbbf24" stroke-width="1.3" stroke-dasharray="5,3" marker-end="url(#arr-yellow)" opacity="0.75"/>
+<text x="538" y="237" font-size="8" fill="rgba(251,191,36,0.75)" transform="rotate(-18,538,237)">Chat / presence</text>
+<!-- Flutter → Firebase Storage -->
+<path d="M 700 219 L 714 250" fill="none" stroke="#fb923c" stroke-width="1.3" stroke-dasharray="5,3" marker-end="url(#arr-orange)" opacity="0.75"/>
+<text x="668" y="236" font-size="8" fill="rgba(251,146,60,0.75)">Images</text>
+<!-- Flutter → FCM -->
+<path d="M 820 219 Q 900 236 940 250" fill="none" stroke="#4ade80" stroke-width="1.2" stroke-dasharray="5,3" marker-end="url(#arr-lime)" opacity="0.65"/>
+<text x="880" y="234" font-size="8" fill="rgba(74,222,128,0.65)" transform="rotate(12,880,234)">push</text>
+<!-- Flutter → Backend REST -->
+<path d="M 640 219 L 640 242 Q 640 280 301 548" fill="none" stroke="#60a5fa" stroke-width="1.8" stroke-dasharray="6,3" marker-end="url(#arr-blue)" opacity="0.85"/>
+<text x="530" y="400" font-size="8.5" fill="rgba(96,165,250,0.85)" transform="rotate(-52,530,400)">REST API + token</text>
+<!-- Backend → Firebase Auth verify -->
+<path d="M 130 548 Q 128 456 148 442" fill="none" stroke="#f97316" stroke-width="1.2" stroke-dasharray="4,3" marker-end="url(#arr-orange)" opacity="0.55"/>
+<text x="70" y="498" font-size="8" fill="rgba(249,115,22,0.55)" transform="rotate(-82,70,498)">verify(token)</text>
+<!-- Backend → Firestore sync -->
+<path d="M 310 548 Q 390 500 420 442" fill="none" stroke="#fbbf24" stroke-width="1.2" stroke-dasharray="4,3" marker-end="url(#arr-yellow)" opacity="0.55"/>
+<text x="328" y="500" font-size="8" fill="rgba(251,191,36,0.55)" transform="rotate(-38,328,500)">sync metadata</text>
+<!-- Backend → Cloud SQL -->
+<line x1="566" y1="692" x2="590" y2="692" stroke="#22d3ee" stroke-width="1.6" marker-end="url(#arr-cyan)" opacity="0.9"/>
+<text x="535" y="685" font-size="8.5" fill="rgba(34,211,238,0.85)">CRUD</text>
+<!-- Backend → AI -->
+<path d="M 566 610 Q 640 598 878 614" fill="none" stroke="#c084fc" stroke-width="1.4" marker-end="url(#arr-purple)" opacity="0.8"/>
+<text x="686" y="596" font-size="8.5" fill="rgba(192,132,252,0.8)">score() / moderate()</text>
+<!-- Backend → Stripe -->
+<path d="M 566 750 Q 660 762 878 756" fill="none" stroke="#fbbf24" stroke-width="1.3" stroke-dasharray="5,3" marker-end="url(#arr-yellow)" opacity="0.7"/>
+<text x="672" y="750" font-size="8.5" fill="rgba(251,191,36,0.7)">payments + webhooks</text>
+<!-- Backend → FCM push -->
+<path d="M 400 548 Q 400 490 700 428 Q 880 414 960 442" fill="none" stroke="#4ade80" stroke-width="1.2" stroke-dasharray="5,3" marker-end="url(#arr-lime)" opacity="0.6"/>
+<text x="660" y="412" font-size="8" fill="rgba(74,222,128,0.6)">push notifications</text>
+<!-- Backend → Cloud Run -->
+<path d="M 301 836 L 170 866" fill="none" stroke="#818cf8" stroke-width="1.1" stroke-dasharray="4,3" marker-end="url(#arr-slate)" opacity="0.4"/>
+<!-- Cloud Run → Secret Manager -->
+<line x1="304" y1="920" x2="324" y2="920" stroke="#818cf8" stroke-width="1.1" stroke-dasharray="4,3" marker-end="url(#arr-slate)" opacity="0.4"/>
+<text x="306" y="913" font-size="7.5" fill="rgba(129,140,248,0.4)">secrets</text>
+<!-- Secret Manager → IAM -->
+<line x1="592" y1="920" x2="612" y2="920" stroke="#818cf8" stroke-width="1.1" stroke-dasharray="4,3" marker-end="url(#arr-slate)" opacity="0.4"/>
+<text x="594" y="913" font-size="7.5" fill="rgba(129,140,248,0.4)">perms</text>
+<!-- IAM → VPC -->
+<line x1="880" y1="920" x2="900" y2="920" stroke="#818cf8" stroke-width="1.1" stroke-dasharray="4,3" marker-end="url(#arr-slate)" opacity="0.4"/>
+<text x="882" y="913" font-size="7.5" fill="rgba(129,140,248,0.4)">net</text>
+<!-- Cloud SQL → VPC -->
+<path d="M 718 836 Q 900 852 1020 866" fill="none" stroke="#818cf8" stroke-width="1.1" stroke-dasharray="4,3" marker-end="url(#arr-slate)" opacity="0.35"/>
+<text x="840" y="848" font-size="7.5" fill="rgba(129,140,248,0.35)" transform="rotate(5,840,848)">private link</text>
+
+<!-- ── LEGEND ── -->
+<rect x="1120" y="858" width="162" height="106" rx="5" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+<text x="1201" y="876" text-anchor="middle" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.25)" letter-spacing="2">LEGEND</text>
+<line x1="1136" y1="892" x2="1166" y2="892" stroke="#60a5fa" stroke-width="1.5" marker-end="url(#arr-blue)"/>
+<text x="1172" y="896" font-size="8.5" fill="rgba(255,255,255,0.38)">direct call</text>
+<line x1="1136" y1="912" x2="1166" y2="912" stroke="#818cf8" stroke-width="1.3" stroke-dasharray="5,3" marker-end="url(#arr-slate)"/>
+<text x="1172" y="916" font-size="8.5" fill="rgba(255,255,255,0.38)">async / infra</text>
+<line x1="1136" y1="932" x2="1166" y2="932" stroke="#fbbf24" stroke-width="1.3" stroke-dasharray="5,3" marker-end="url(#arr-yellow)"/>
+<text x="1172" y="936" font-size="8.5" fill="rgba(255,255,255,0.38)">webhook / push</text>
+<circle cx="1142" cy="952" r="3.5" fill="rgba(255,255,255,0.4)"/>
+<text x="1152" y="956" font-size="8.5" fill="rgba(255,255,255,0.38)">active node</text>
+
+</svg>

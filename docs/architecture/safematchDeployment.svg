@@ -1,0 +1,327 @@
+<svg width="1300" height="1020" viewBox="0 0 1300 1020" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono', 'Courier New', monospace">
+<defs>
+  <marker id="arr-blue" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#2563eb"/></marker>
+  <marker id="arr-green" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#059669"/></marker>
+  <marker id="arr-orange" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#ea580c"/></marker>
+  <marker id="arr-yellow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#d97706"/></marker>
+  <marker id="arr-purple" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#7c3aed"/></marker>
+  <marker id="arr-cyan" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#0284c7"/></marker>
+  <marker id="arr-slate" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#475569"/></marker>
+  <marker id="arr-pink" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#db2777"/></marker>
+  <marker id="arr-red" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#dc2626"/></marker>
+
+  <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+    <circle cx="1" cy="1" r="0.9" fill="#94a3b8" opacity="0.22"/>
+  </pattern>
+
+  <!-- zone fills -->
+  <linearGradient id="g-gcp" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#f0fdf4" stop-opacity="0.9"/>
+    <stop offset="100%" stop-color="#dcfce7" stop-opacity="0.7"/>
+  </linearGradient>
+  <linearGradient id="g-vpc" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#eff6ff" stop-opacity="0.9"/>
+    <stop offset="100%" stop-color="#dbeafe" stop-opacity="0.8"/>
+  </linearGradient>
+  <linearGradient id="g-pub" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#fff7ed" stop-opacity="0.8"/>
+    <stop offset="100%" stop-color="#ffedd5" stop-opacity="0.6"/>
+  </linearGradient>
+
+  <!-- node fills -->
+  <linearGradient id="n-flutter" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#eff6ff"/><stop offset="100%" stop-color="#dbeafe"/>
+  </linearGradient>
+  <linearGradient id="n-run" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#f0fdf4"/><stop offset="100%" stop-color="#dcfce7"/>
+  </linearGradient>
+  <linearGradient id="n-sql" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#f0f9ff"/><stop offset="100%" stop-color="#e0f2fe"/>
+  </linearGradient>
+  <linearGradient id="n-secret" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#fef9c3"/><stop offset="100%" stop-color="#fef08a"/>
+  </linearGradient>
+  <linearGradient id="n-iam" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#fdf4ff"/><stop offset="100%" stop-color="#f3e8ff"/>
+  </linearGradient>
+  <linearGradient id="n-vpc" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#eff6ff"/><stop offset="100%" stop-color="#dbeafe"/>
+  </linearGradient>
+  <linearGradient id="n-firebase" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#fff7ed"/><stop offset="100%" stop-color="#ffedd5"/>
+  </linearGradient>
+  <linearGradient id="n-ai" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#fdf4ff"/><stop offset="100%" stop-color="#f3e8ff"/>
+  </linearGradient>
+</defs>
+
+<!-- BG -->
+<rect width="1300" height="1020" fill="#e2e8f0"/>
+<rect width="1300" height="1020" fill="url(#dots)"/>
+
+<!-- ══════════════════════════════ -->
+<!-- TITLE                        -->
+<!-- ══════════════════════════════ -->
+<text x="650" y="40" text-anchor="middle" font-size="23" font-weight="900" fill="#0f172a" letter-spacing="-1">
+  <tspan fill="#0f172a">Safe</tspan><tspan fill="#db2777">match</tspan>
+</text>
+<text x="650" y="57" text-anchor="middle" font-size="9.5" fill="#64748b" letter-spacing="3">DEPLOYMENT DIAGRAM — GCP INFRASTRUCTURE</text>
+
+<!-- ══════════════════════════════════════════════════════════ -->
+<!-- LAYER 1 — CLIENT (top)                                  -->
+<!-- ══════════════════════════════════════════════════════════ -->
+<text x="44" y="88" font-size="8.5" font-weight="700" fill="#64748b" letter-spacing="2">CLIENT</text>
+<line x1="40" y1="92" x2="1260" y2="92" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4,4"/>
+
+<!-- Flutter App -->
+<rect x="530" y="100" width="240" height="118" rx="10" fill="url(#n-flutter)" stroke="#2563eb" stroke-width="1.8"/>
+<rect x="530" y="100" width="240" height="28" rx="10" fill="rgba(37,99,235,0.1)"/>
+<rect x="530" y="118" width="240" height="10" fill="rgba(37,99,235,0.1)"/>
+<text x="650" y="119" text-anchor="middle" font-size="12.5" font-weight="800" fill="#1d4ed8">Flutter App</text>
+<line x1="530" y1="128" x2="770" y2="128" stroke="rgba(37,99,235,0.15)" stroke-width="1"/>
+<text x="546" y="145" font-size="9" fill="#1d4ed8">&#x25B8; iOS &amp; Android</text>
+<text x="546" y="160" font-size="9" fill="#1d4ed8">&#x25B8; Sends Firebase ID token on all requests</text>
+<text x="546" y="175" font-size="9" fill="#1d4ed8">&#x25B8; HTTPS to Cloud Run public endpoint</text>
+<text x="650" y="207" text-anchor="middle" font-size="8" fill="#93c5fd" font-style="italic">public internet</text>
+<circle cx="758" cy="112" r="3.5" fill="#2563eb" opacity="0.7"/>
+
+<!-- ══════════════════════════════════════════════════════════ -->
+<!-- LAYER 2 — PUBLIC SERVICES                               -->
+<!-- ══════════════════════════════════════════════════════════ -->
+<text x="44" y="236" font-size="8.5" font-weight="700" fill="#64748b" letter-spacing="2">PUBLIC SERVICES</text>
+<line x1="40" y1="240" x2="1260" y2="240" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4,4"/>
+
+<!-- pub services zone -->
+<rect x="40" y="248" width="1220" height="154" rx="10" fill="url(#g-pub)" stroke="#fed7aa" stroke-width="1.2" stroke-dasharray="5,4"/>
+
+<!-- Firebase Auth -->
+<rect x="58" y="262" width="220" height="112" rx="9" fill="url(#n-firebase)" stroke="#ea580c" stroke-width="1.5"/>
+<rect x="58" y="262" width="220" height="26" rx="9" fill="rgba(234,88,12,0.1)"/>
+<rect x="58" y="278" width="220" height="10" fill="rgba(234,88,12,0.1)"/>
+<text x="168" y="280" text-anchor="middle" font-size="11.5" font-weight="800" fill="#c2410c">Firebase Auth</text>
+<line x1="58" y1="288" x2="278" y2="288" stroke="rgba(234,88,12,0.12)" stroke-width="1"/>
+<text x="74" y="305" font-size="8.5" fill="#c2410c">&#x25B8; Token verification (JWT)</text>
+<text x="74" y="319" font-size="8.5" fill="#c2410c">&#x25B8; Google public keys</text>
+<text x="74" y="333" font-size="8.5" fill="#c2410c">&#x25B8; No secret required</text>
+<text x="168" y="362" text-anchor="middle" font-size="7.5" fill="#fb923c" font-style="italic">identity only</text>
+
+<!-- Firestore -->
+<rect x="298" y="262" width="220" height="112" rx="9" fill="url(#n-firebase)" stroke="#d97706" stroke-width="1.5"/>
+<rect x="298" y="262" width="220" height="26" rx="9" fill="rgba(217,119,6,0.1)"/>
+<rect x="298" y="278" width="220" height="10" fill="rgba(217,119,6,0.1)"/>
+<text x="408" y="280" text-anchor="middle" font-size="11.5" font-weight="800" fill="#b45309">Firestore</text>
+<line x1="298" y1="288" x2="518" y2="288" stroke="rgba(217,119,6,0.12)" stroke-width="1"/>
+<text x="314" y="305" font-size="8.5" fill="#b45309">&#x25B8; Chat + presence (real-time)</text>
+<text x="314" y="319" font-size="8.5" fill="#b45309">&#x25B8; Match events · metadata</text>
+<text x="314" y="333" font-size="8.5" fill="#b45309">&#x25B8; Flutter + backend access</text>
+<text x="408" y="362" text-anchor="middle" font-size="7.5" fill="#fbbf24" font-style="italic">FirestorePort adapter</text>
+
+<!-- Firebase Storage -->
+<rect x="538" y="262" width="220" height="112" rx="9" fill="url(#n-firebase)" stroke="#ea580c" stroke-width="1.5"/>
+<rect x="538" y="262" width="220" height="26" rx="9" fill="rgba(234,88,12,0.1)"/>
+<rect x="538" y="278" width="220" height="10" fill="rgba(234,88,12,0.1)"/>
+<text x="648" y="280" text-anchor="middle" font-size="11.5" font-weight="800" fill="#c2410c">Firebase Storage</text>
+<line x1="538" y1="288" x2="758" y2="288" stroke="rgba(234,88,12,0.12)" stroke-width="1"/>
+<text x="554" y="305" font-size="8.5" fill="#c2410c">&#x25B8; Profile images (CDN)</text>
+<text x="554" y="319" font-size="8.5" fill="#c2410c">&#x25B8; Direct upload from Flutter</text>
+<text x="554" y="333" font-size="8.5" fill="#c2410c">&#x25B8; Signed URL generation</text>
+<text x="648" y="362" text-anchor="middle" font-size="7.5" fill="#fb923c" font-style="italic">no backend relay</text>
+
+<!-- AI Provider -->
+<rect x="778" y="262" width="220" height="112" rx="9" fill="url(#n-ai)" stroke="#7c3aed" stroke-width="1.5"/>
+<rect x="778" y="262" width="220" height="26" rx="9" fill="rgba(124,58,237,0.1)"/>
+<rect x="778" y="278" width="220" height="10" fill="rgba(124,58,237,0.1)"/>
+<text x="888" y="280" text-anchor="middle" font-size="11.5" font-weight="800" fill="#6d28d9">AI Provider</text>
+<line x1="778" y1="288" x2="998" y2="288" stroke="rgba(124,58,237,0.12)" stroke-width="1"/>
+<text x="794" y="305" font-size="8.5" fill="#6d28d9">&#x25B8; Scoring / moderation prompts</text>
+<text x="794" y="319" font-size="8.5" fill="#6d28d9">&#x25B8; External HTTPS call</text>
+<text x="794" y="333" font-size="8.5" fill="#6d28d9">&#x25B8; API key via Secret Manager</text>
+<text x="888" y="362" text-anchor="middle" font-size="7.5" fill="#c084fc" font-style="italic">AiScoringPort — swappable</text>
+
+<!-- Stripe -->
+<rect x="1018" y="262" width="220" height="112" rx="9" fill="#fefce8" stroke="#ca8a04" stroke-width="1.5"/>
+<rect x="1018" y="262" width="220" height="26" rx="9" fill="rgba(202,138,4,0.1)"/>
+<rect x="1018" y="278" width="220" height="10" fill="rgba(202,138,4,0.1)"/>
+<text x="1128" y="280" text-anchor="middle" font-size="11.5" font-weight="800" fill="#92400e">Stripe</text>
+<line x1="1018" y1="288" x2="1238" y2="288" stroke="rgba(202,138,4,0.12)" stroke-width="1"/>
+<text x="1034" y="305" font-size="8.5" fill="#92400e">&#x25B8; Payments · subscriptions</text>
+<text x="1034" y="319" font-size="8.5" fill="#92400e">&#x25B8; Signed webhooks &#x2192; Cloud Run</text>
+<text x="1034" y="333" font-size="8.5" fill="#92400e">&#x25B8; API key via Secret Manager</text>
+<text x="1128" y="362" text-anchor="middle" font-size="7.5" fill="#ca8a04" font-style="italic">zero card data stored</text>
+
+<!-- ══════════════════════════════════════════════════════════ -->
+<!-- LAYER 3 — GCP BACKEND                                   -->
+<!-- ══════════════════════════════════════════════════════════ -->
+<text x="44" y="430" font-size="8.5" font-weight="700" fill="#64748b" letter-spacing="2">GCP BACKEND</text>
+<line x1="40" y1="434" x2="1260" y2="434" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4,4"/>
+
+<!-- GCP zone -->
+<rect x="40" y="442" width="1220" height="430" rx="12" fill="url(#g-gcp)" stroke="#86efac" stroke-width="1.5" stroke-dasharray="5,4"/>
+<text x="1238" y="462" text-anchor="end" font-size="8" font-weight="700" fill="#059669" letter-spacing="1" opacity="0.6">GCP</text>
+
+<!-- Cloud Run -->
+<rect x="430" y="458" width="440" height="214" rx="11" fill="url(#n-run)" stroke="#059669" stroke-width="2.2"/>
+<rect x="430" y="458" width="440" height="30" rx="11" fill="rgba(5,150,105,0.1)"/>
+<rect x="430" y="476" width="440" height="12" fill="rgba(5,150,105,0.1)"/>
+<text x="650" y="479" text-anchor="middle" font-size="13" font-weight="800" fill="#065f46">Cloud Run</text>
+<text x="650" y="494" text-anchor="middle" font-size="8.5" fill="#6ee7b7">Spring Boot · Java 17 · containerized · autoscaling</text>
+<line x1="430" y1="500" x2="870" y2="500" stroke="rgba(5,150,105,0.15)" stroke-width="1"/>
+<text x="448" y="518" font-size="9" fill="#047857">&#x25B8; Public HTTPS endpoint (TLS 1.2+)</text>
+<text x="448" y="534" font-size="9" fill="#047857">&#x25B8; Verifies Firebase ID token on every request</text>
+<text x="448" y="550" font-size="9" fill="#047857">&#x25B8; Pulls secrets from Secret Manager at runtime</text>
+<text x="448" y="566" font-size="9" fill="#047857">&#x25B8; Connects to Cloud SQL via VPC Connector</text>
+<text x="448" y="582" font-size="9" fill="#047857">&#x25B8; Uses Cloud Run Service Account for all IAM</text>
+<text x="448" y="598" font-size="9" fill="#047857">&#x25B8; CI/CD via GitHub Actions &#x2192; deploy on push</text>
+<text x="448" y="614" font-size="9" fill="#047857">&#x25B8; Scales to zero · max instances configurable</text>
+<text x="650" y="660" text-anchor="middle" font-size="8" fill="#6ee7b7" font-style="italic">all business logic · central compute unit</text>
+
+<!-- Secret Manager -->
+<rect x="58" y="462" width="240" height="120" rx="9" fill="url(#n-secret)" stroke="#ca8a04" stroke-width="1.5"/>
+<rect x="58" y="462" width="240" height="26" rx="9" fill="rgba(202,138,4,0.1)"/>
+<rect x="58" y="478" width="240" height="10" fill="rgba(202,138,4,0.1)"/>
+<text x="178" y="480" text-anchor="middle" font-size="11.5" font-weight="800" fill="#92400e">Secret Manager</text>
+<line x1="58" y1="488" x2="298" y2="488" stroke="rgba(202,138,4,0.12)" stroke-width="1"/>
+<text x="74" y="505" font-size="9" fill="#78350f">&#x25B8; DB credentials · JWT secret</text>
+<text x="74" y="520" font-size="9" fill="#78350f">&#x25B8; Firebase service account key</text>
+<text x="74" y="535" font-size="9" fill="#78350f">&#x25B8; AI API key · Stripe secret</text>
+<text x="74" y="550" font-size="9" fill="#78350f">&#x25B8; Stripe webhook secret</text>
+<text x="178" y="573" text-anchor="middle" font-size="7.5" fill="#ca8a04" font-style="italic">runtime only · never in code</text>
+
+<!-- IAM -->
+<rect x="58" y="598" width="240" height="120" rx="9" fill="url(#n-iam)" stroke="#7c3aed" stroke-width="1.5"/>
+<rect x="58" y="598" width="240" height="26" rx="9" fill="rgba(124,58,237,0.1)"/>
+<rect x="58" y="614" width="240" height="10" fill="rgba(124,58,237,0.1)"/>
+<text x="178" y="616" text-anchor="middle" font-size="11.5" font-weight="800" fill="#6d28d9">IAM</text>
+<line x1="58" y1="624" x2="298" y2="624" stroke="rgba(124,58,237,0.12)" stroke-width="1"/>
+<text x="74" y="641" font-size="9" fill="#6d28d9">&#x25B8; Service Account: CloudRun-SA</text>
+<text x="74" y="656" font-size="9" fill="#6d28d9">&#x25B8; Role: Secret Manager Accessor</text>
+<text x="74" y="671" font-size="9" fill="#6d28d9">&#x25B8; Role: Cloud SQL Client</text>
+<text x="74" y="686" font-size="9" fill="#6d28d9">&#x25B8; Role: Firebase / Firestore access</text>
+<text x="178" y="709" text-anchor="middle" font-size="7.5" fill="#a78bfa" font-style="italic">least privilege per component</text>
+
+<!-- VPC zone inside GCP -->
+<rect x="880" y="452" width="360" height="238" rx="10" fill="rgba(219,234,254,0.6)" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="5,4"/>
+<text x="1060" y="472" text-anchor="middle" font-size="9" font-weight="700" fill="#1d4ed8" letter-spacing="1">PRIVATE VPC</text>
+
+<!-- VPC Connector -->
+<rect x="898" y="480" width="200" height="92" rx="9" fill="url(#n-vpc)" stroke="#2563eb" stroke-width="1.5"/>
+<rect x="898" y="480" width="200" height="26" rx="9" fill="rgba(37,99,235,0.1)"/>
+<rect x="898" y="496" width="200" height="10" fill="rgba(37,99,235,0.1)"/>
+<text x="998" y="498" text-anchor="middle" font-size="11.5" font-weight="800" fill="#1d4ed8">VPC Connector</text>
+<line x1="898" y1="506" x2="1098" y2="506" stroke="rgba(37,99,235,0.12)" stroke-width="1"/>
+<text x="914" y="523" font-size="9" fill="#1d4ed8">&#x25B8; Private path: Run &#x2192; SQL</text>
+<text x="914" y="538" font-size="9" fill="#1d4ed8">&#x25B8; No public IP on database</text>
+<text x="998" y="562" text-anchor="middle" font-size="7.5" fill="#93c5fd" font-style="italic">serverless VPC access</text>
+
+<!-- Cloud SQL -->
+<rect x="898" y="592" width="322" height="84" rx="9" fill="url(#n-sql)" stroke="#0284c7" stroke-width="1.8"/>
+<rect x="898" y="592" width="322" height="26" rx="9" fill="rgba(2,132,199,0.1)"/>
+<rect x="898" y="608" width="322" height="10" fill="rgba(2,132,199,0.1)"/>
+<text x="1059" y="610" text-anchor="middle" font-size="11.5" font-weight="800" fill="#0369a1">Cloud SQL</text>
+<text x="1059" y="624" text-anchor="middle" font-size="8" fill="#7dd3fc">PostgreSQL — source of truth</text>
+<line x1="898" y1="630" x2="1220" y2="630" stroke="rgba(2,132,199,0.12)" stroke-width="1"/>
+<text x="914" y="647" font-size="9" fill="#0369a1">&#x25B8; No public IP · VPC only · AES-256 at rest</text>
+<text x="914" y="661" font-size="9" fill="#0369a1">&#x25B8; IAM DB auth · automated backups</text>
+
+<!-- ══════════════════════════════════════════════════════════ -->
+<!-- LAYER 4 — NETWORKING NOTES                              -->
+<!-- ══════════════════════════════════════════════════════════ -->
+<text x="44" y="896" font-size="8.5" font-weight="700" fill="#64748b" letter-spacing="2">NETWORKING</text>
+<line x1="40" y1="900" x2="1260" y2="900" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4,4"/>
+
+<rect x="40" y="908" width="1220" height="94" rx="10" fill="rgba(248,250,252,0.9)" stroke="#cbd5e1" stroke-width="1.3"/>
+
+<rect x="58" y="920" width="16" height="16" rx="3" fill="#dcfce7" stroke="#059669" stroke-width="1"/>
+<text x="66" y="932" text-anchor="middle" font-size="8" font-weight="700" fill="#059669">P</text>
+<text x="82" y="932" font-size="9" fill="#1e293b" font-weight="700">Public paths</text>
+<text x="82" y="946" font-size="9" fill="#475569">Flutter &#x2192; Cloud Run (HTTPS · Firebase ID token) · Flutter &#x2192; Firebase services (direct) · Cloud Run &#x2192; AI Provider / Stripe (HTTPS + API key)</text>
+
+<rect x="58" y="956" width="16" height="16" rx="3" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<text x="66" y="968" text-anchor="middle" font-size="8" font-weight="700" fill="#2563eb">V</text>
+<text x="82" y="968" font-size="9" fill="#1e293b" font-weight="700">Private paths (VPC)</text>
+<text x="82" y="982" font-size="9" fill="#475569">Cloud Run &#x2192; Cloud SQL (VPC Connector · no public IP) · Cloud Run &#x2192; Secret Manager (IAM role · internal) · TLS 1.2+ on all connections</text>
+
+<!-- ══════════════════════════════════════════════════════════ -->
+<!-- ARROWS                                                   -->
+<!-- ══════════════════════════════════════════════════════════ -->
+
+<!-- Flutter → Cloud Run -->
+<line x1="650" y1="218" x2="650" y2="458" stroke="#059669" stroke-width="2" marker-end="url(#arr-green)"/>
+<rect x="562" y="328" width="168" height="16" rx="3" fill="rgba(240,253,244,0.92)"/>
+<text x="646" y="340" text-anchor="middle" font-size="8.5" fill="#047857" font-weight="700">HTTPS + Firebase ID token</text>
+
+<!-- Cloud Run → Firebase Auth -->
+<path d="M 492 480 Q 400 440 278 374" fill="none" stroke="#ea580c" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arr-orange)"/>
+<rect x="300" y="420" width="90" height="16" rx="3" fill="rgba(255,247,237,0.92)"/>
+<text x="345" y="432" text-anchor="middle" font-size="8.5" fill="#c2410c">verify token</text>
+
+<!-- Cloud Run → Firestore -->
+<path d="M 490 530 Q 448 480 518 374" fill="none" stroke="#d97706" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arr-yellow)"/>
+<rect x="434" y="458" width="90" height="16" rx="3" fill="rgba(255,251,235,0.92)"/>
+<text x="479" y="470" text-anchor="middle" font-size="8.5" fill="#b45309">metadata sync</text>
+
+<!-- Cloud Run → Firebase Storage -->
+<line x1="650" y1="458" x2="648" y2="374" stroke="#ea580c" stroke-width="1.4" stroke-dasharray="5,3" marker-end="url(#arr-orange)"/>
+<rect x="594" y="410" width="82" height="16" rx="3" fill="rgba(255,247,237,0.92)"/>
+<text x="635" y="422" text-anchor="middle" font-size="8.5" fill="#c2410c">signed URLs</text>
+
+<!-- Cloud Run → AI Provider -->
+<path d="M 810 530 Q 860 460 838 374" fill="none" stroke="#7c3aed" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arr-purple)"/>
+<rect x="820" y="450" width="82" height="16" rx="3" fill="rgba(253,244,255,0.92)"/>
+<text x="861" y="462" text-anchor="middle" font-size="8.5" fill="#6d28d9">score / moderate</text>
+
+<!-- Cloud Run → Stripe -->
+<path d="M 870" fill="none"/>
+<path d="M 840 520 Q 1000 460 1070 374" fill="none" stroke="#ca8a04" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arr-yellow)"/>
+<rect x="972" y="440" width="60" height="16" rx="3" fill="rgba(254,252,232,0.92)"/>
+<text x="1002" y="452" text-anchor="middle" font-size="8.5" fill="#92400e">webhooks</text>
+
+<!-- Cloud Run → Secret Manager -->
+<line x1="430" y1="522" x2="298" y2="522" stroke="#ca8a04" stroke-width="1.6" marker-end="url(#arr-yellow)"/>
+<rect x="322" y="508" width="96" height="16" rx="3" fill="rgba(254,249,195,0.92)"/>
+<text x="370" y="520" text-anchor="middle" font-size="8.5" fill="#78350f" font-weight="700">pull secrets</text>
+
+<!-- Cloud Run → IAM (service account) -->
+<path d="M 430 600 L 298 650" fill="none" stroke="#7c3aed" stroke-width="1.4" stroke-dasharray="5,3" marker-end="url(#arr-purple)"/>
+<rect x="310" y="618" width="92" height="16" rx="3" fill="rgba(253,244,255,0.92)"/>
+<text x="356" y="630" text-anchor="middle" font-size="8.5" fill="#6d28d9">uses SA roles</text>
+
+<!-- Cloud Run → VPC Connector -->
+<line x1="870" y1="565" x2="898" y2="526" stroke="#2563eb" stroke-width="1.8" marker-end="url(#arr-blue)"/>
+<rect x="852" y="542" width="68" height="16" rx="3" fill="rgba(239,246,255,0.92)"/>
+<text x="886" y="554" text-anchor="middle" font-size="8.5" fill="#1d4ed8" font-weight="700">VPC path</text>
+
+<!-- VPC Connector → Cloud SQL -->
+<line x1="998" y1="572" x2="1059" y2="592" stroke="#2563eb" stroke-width="1.8" marker-end="url(#arr-blue)"/>
+<rect x="976" y="578" width="96" height="16" rx="3" fill="rgba(239,246,255,0.92)"/>
+<text x="1024" y="590" text-anchor="middle" font-size="8.5" fill="#0369a1" font-weight="700">private SQL</text>
+
+<!-- IAM → Secret Manager (grants) -->
+<line x1="178" y1="598" x2="178" y2="582" stroke="#7c3aed" stroke-width="1.3" stroke-dasharray="4,3" marker-end="url(#arr-purple)"/>
+
+<!-- ══════════════════════════════════════════════════════════ -->
+<!-- LEGEND (top right)                                      -->
+<!-- ══════════════════════════════════════════════════════════ -->
+<rect x="1040" y="68" width="234" height="164" rx="9" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.3"/>
+<text x="1157" y="88" text-anchor="middle" font-size="10.5" font-weight="800" fill="#1e293b" letter-spacing="0.5">LEGEND</text>
+<line x1="1054" y1="94" x2="1260" y2="94" stroke="#e2e8f0" stroke-width="1"/>
+
+<line x1="1058" y1="112" x2="1098" y2="112" stroke="#059669" stroke-width="2" marker-end="url(#arr-green)"/>
+<text x="1108" y="116" font-size="9" fill="#334155">Public HTTPS request</text>
+
+<line x1="1058" y1="132" x2="1098" y2="132" stroke="#ea580c" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arr-orange)"/>
+<text x="1108" y="136" font-size="9" fill="#334155">Firebase service call</text>
+
+<line x1="1058" y1="152" x2="1098" y2="152" stroke="#2563eb" stroke-width="1.8" marker-end="url(#arr-blue)"/>
+<text x="1108" y="156" font-size="9" fill="#334155">Private VPC connection</text>
+
+<line x1="1058" y1="172" x2="1098" y2="172" stroke="#ca8a04" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arr-yellow)"/>
+<text x="1108" y="176" font-size="9" fill="#334155">Secret / IAM access</text>
+
+<line x1="1058" y1="192" x2="1098" y2="192" stroke="#7c3aed" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arr-purple)"/>
+<text x="1108" y="196" font-size="9" fill="#334155">External API call</text>
+
+<rect x="1058" y="202" width="10" height="10" rx="2" fill="rgba(219,234,254,0.6)" stroke="#2563eb" stroke-width="1" stroke-dasharray="3,2"/>
+<text x="1078" y="212" font-size="9" fill="#334155">Private VPC zone</text>
+
+</svg>
