@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SAFE — Accès prioritaire au lancement</title>
+  <title>SAFE — Liste d'attente</title>
   <meta
     name="description"
-    content="Accédez en priorité au lancement de SAFE, l'application de rencontre qui remplace le swipe infini par 3 invitations de qualité par semaine."
+    content="Rejoignez la liste d'attente SAFE, l'application de rencontre qui remplace le swipe infini par 3 invitations de qualité par semaine."
   />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,7 +16,7 @@
     rel="stylesheet"
   />
 
-  <link rel="stylesheet" href="frontend/styles/stylesAB.css" />
+  <link rel="stylesheet" href="frontend/styles/styles.css" />
 </head>
 <body>
   <div class="page-bg"></div>
@@ -34,10 +34,10 @@
         <a href="#concept">Concept</a>
         <a href="#how-it-works">Fonctionnement</a>
         <a href="#safety">Sécurité</a>
-        <a href="#waitlist">Accès prioritaire</a>
+        <a href="#waitlist">Préinscription</a>
       </nav>
 
-      <a href="#waitlist" class="btn btn-secondary header-cta">Accéder au lancement</a>
+      <a href="#waitlist" class="btn btn-secondary header-cta">Rejoindre</a>
     </div>
   </header>
 
@@ -46,23 +46,22 @@
       <div class="container hero-grid">
         <div class="hero-copy">
           <span class="eyebrow">Préinscription ouverte</span>
-          <h1>Rencontrez autrement. Moins de profils. Plus de sens.</h1>
+          <h1>Les rencontres qui prennent enfin le temps d’exister.</h1>
           <p class="hero-lead">
-            Recevez <strong>3 invitations de rencontre par semaine</strong>, sélectionnées pour vous.
-            SAFE remplace le swipe infini par une expérience plus humaine, plus claire et plus respectueuse.
+            Fini le swipe infini. Avec SAFE, recevez
+            <strong>3 invitations de qualité par semaine</strong>,
+            dans une expérience pensée pour la sécurité, la rareté et de vraies rencontres.
           </p>
 
           <div class="hero-actions">
-            <a href="#waitlist" class="btn btn-primary">Accéder en priorité au lancement</a>
+            <a href="#waitlist" class="btn btn-primary">Rejoindre la liste d’attente</a>
             <a href="#concept" class="btn btn-ghost">Découvrir le concept</a>
           </div>
 
-          <p class="hero-urgency">Places limitées pour les premiers inscrits.</p>
-
           <ul class="hero-points">
-            <li>Pas de swipe infini</li>
-            <li>3 invitations par semaine</li>
-            <li>Données confidentielles</li>
+            <li>3 invitations hebdomadaires</li>
+            <li>Matching plus qualitatif</li>
+            <li>Expérience plus respectueuse</li>
           </ul>
         </div>
 
@@ -73,16 +72,16 @@
             </div>
 
             <div class="phone-content">
-              <div class="mock-badge">Lancement prochain</div>
+              <div class="mock-badge">Bientôt disponible</div>
 
               <div class="mock-logo">
                 <img src="frontend/assets/Logo%20avec%20drop%20shadow.svg" alt="Logo SAFE" />
               </div>
 
               <div class="invite-card">
-                <span class="invite-pill">3 invitations. Pas plus.</span>
+                <span class="invite-pill">Invitation 1</span>
                 <h3>Une autre manière de matcher</h3>
-                <p>Moins de profils, moins de bruit, plus d’attention et plus de sens.</p>
+                <p>Moins de profils. Plus d’attention. Plus de sens.</p>
               </div>
 
               <div class="mini-grid">
@@ -139,14 +138,14 @@
         <div class="steps">
           <article class="step-card">
             <span class="step-number">1</span>
-            <h3>Rejoignez la liste d’attente</h3>
-            <p>Vous vous inscrivez avant le lancement officiel pour accéder en priorité à SAFE.</p>
+            <h3>Préinscription</h3>
+            <p>Vous rejoignez la liste d’attente avant le lancement officiel.</p>
           </article>
 
           <article class="step-card">
             <span class="step-number">2</span>
             <h3>Ouverture prioritaire</h3>
-            <p>Les personnes préinscrites sont informées en priorité au moment du lancement.</p>
+            <p>Les personnes préinscrites sont informées en priorité lors de l’ouverture.</p>
           </article>
 
           <article class="step-card">
@@ -211,14 +210,19 @@
     <section id="waitlist" class="section waitlist-section">
       <div class="container waitlist-layout">
         <div class="waitlist-copy">
-          <span class="section-kicker">Accès prioritaire</span>
+          <span class="section-kicker">Liste d’attente</span>
           <h2>Rejoignez SAFE avant le lancement</h2>
           <p>
-            Laissez votre email pour être informé du lancement et faire partie des premiers inscrits.
+            Laissez vos coordonnées pour être informé du lancement et faire partie des premiers inscrits.
           </p>
         </div>
 
         <form class="waitlist-form" id="waitlistForm">
+          <label>
+            <span>Prénom</span>
+            <input type="text" name="firstName" placeholder="Votre prénom" required />
+          </label>
+
           <label>
             <span>Email</span>
             <input type="email" name="email" placeholder="nom@email.com" required />
@@ -226,7 +230,16 @@
 
           <label>
             <span>Ville</span>
-            <input type="text" name="city" placeholder="Paris, Lyon, Lille..." />
+            <input type="text" name="city" placeholder="Paris, Lyon, Lille..." required />
+          </label>
+
+          <label>
+            <span>Je souhaite être prévenu par</span>
+            <select name="contactPreference" required>
+              <option value="">Sélectionner</option>
+              <option>Email</option>
+              <option>Téléphone</option>
+            </select>
           </label>
 
           <label class="checkbox-line">
@@ -234,8 +247,7 @@
             <span>J’accepte d’être recontacté au sujet du lancement de SAFE.</span>
           </label>
 
-          <button type="submit" class="btn btn-primary btn-full">Je veux accéder au lancement</button>
-          <p class="form-trust">Aucun spam. Vos données restent confidentielles.</p>
+          <button type="submit" class="btn btn-primary btn-full">Rejoindre la liste d’attente</button>
           <p class="form-feedback" id="formFeedback" aria-live="polite"></p>
         </form>
       </div>
@@ -282,6 +294,7 @@
       </div>
     </div>
   </footer>
-  <script type="module" src="frontend/scripts/scriptAB.js"></script>
+
+  <script src="frontend/scripts/script.js"></script>
 </body>
 </html>
